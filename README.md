@@ -5,7 +5,10 @@ I chose Tailwind CSS because it is very unopinionated.ie, It lets you take full 
 Lets discuss about the 'src/components/'
 "chat-header.tsx" : a file that exports almost a static react component division of the page containing ride name, start,destination and few buttons around the place.
 
-"messages.tsx" : a file that exports a react component that serves as Boiler plates/Card wrappers/containers for the chats fetched from the api depending on whether the "chat.sender.self" is true or false (returns a message with blue wrapper if the chat.sender.self is true otherwise false).It also includes a "Verified icon" at the bottom of the profile picture if "chat.sender.is_kyc_verified" is true. This file also provides a component that renders Date-header (03 JUL,2024) on change in dates of messages. Unfortunately the data fetched from the response of api does not include varying dates through our pages. For that reason, it does not appear on the screen at all.Though, I have shown below how the Date-header would appear on date changes.
+"render-message.tsx" : a file that exports a react component that serves as Boiler plates/Card wrappers/containers for the chats fetched from the api depending on whether the "chat.sender.self" is true or false (returns a message with blue wrapper if the chat.sender.self is true otherwise false).It also includes a "Verified icon" at the bottom of the profile picture if "chat.sender.is_kyc_verified" is true. This file also provides a component that renders Date-header (03 JUL,2024) on change in dates of messages. Unfortunately the data fetched from the response of api does not include varying dates through our pages. For that reason, it does not appear on the screen at all.Though, I have shown below how the Date-header would appear on date changes.
+
+![date-header](https://github.com/YashwantOstwal/-CoRiderAssignment/assets/140978232/6c1c4a9e-5380-480e-a05d-06a1389074d2)
+
 
 "chat-box.tsx" : a file that facilitates inverse infinite scrolling and hit the api for fetching older chats upon scroll bar reaching its maximum scroll along +y direction and mapping each chat to the message component.This component also make sures that the latest messages are stacked from the bottom of the chat divison.
 
