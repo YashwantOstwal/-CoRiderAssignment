@@ -41,17 +41,17 @@ export default function ChatHeader (){
             <EditIcon/>
         </div>
         <div className = 'flex justify-between items-center'>
-            <div className = 'flex gap-6 items-center'>
+            <div className = 'flex gap-4 items-center'>
                 <div className = 'relative size-12 overflow-hidden rounded-full'>
                     <div className = 'absolute top-0 left-0 size-6'><img src={Displaytl} alt="display" /></div>
                     <div className = 'absolute bottom-0 left-0 size-6'><img src={Displaybl} alt="display" /></div>
                     <div className = 'absolute top-0 right-0 size-6'><img src={Displaytr} alt="display" /></div>
                     <div className = 'absolute bottom-0 right-0 size-6'><img src={Displaybr} alt="display" /></div>
                 </div>
-            <div className = 'grid grid-rows-2 -space-y-3 items-center'>
-                <div><span className = 'text-[#606060] mulish-500 text-base'>From </span><span className = 'mulish-700 text-lg text-[#141e0d] font-extrabold'>{chatHeader.from}</span></div>
-                <div><span className = 'text-[#606060] mulish-500 text-base'>To </span><span className = 'mulish-700 text-lg text-[#141e0d] font-extrabold'>{chatHeader.to}</span></div>
-            </div> 
+                <div className = 'grid grid-rows-2 -space-y-3 items-center text-[#606060] mulish-500 text-base'>
+                    <div>From <span className = 'mulish-700 text-lg text-[#141e0d] font-extrabold'>{chatHeader.from}</span></div>
+                    <div>To <span className = 'mulish-700 text-lg text-[#141e0d] font-extrabold'>{chatHeader.to}</span></div>
+                </div> 
             </div>
             <button className = 'relative' onClick={()=>{setOpen((prevState)=>!prevState)}}><VerticalDotsIcon/>
                 {open && <div className = 'absolute top-6 right-0 w-40 h-36 grid grid-rows-3 px-2 bg-white divide-y divide-[#E5E5E0] rounded-lg drop-shadow-md'>
