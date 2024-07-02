@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import {Click,SendIcon,PaperclipIcon} from '../icons.tsx'
 
 export default function InputBar(){
@@ -12,15 +11,9 @@ export default function InputBar(){
                     <button className = 'relative' onClick ={()=>{setOpen((prev)=> !prev)}}>
                         <PaperclipIcon/>
                         {open &&
-                            <motion.div 
-                                className = 'absolute -top-[75px] -left-[69px]'
-                                key = {open} 
-                                initial = {{y:'15px',opacity:0}} 
-                                animate = {{y:'0px',opacity:1}} 
-                                transition = {{duration:0.4,ease:'backInOut'}}
-                            >
+                            <div className = 'absolute -top-[75px] -left-[69px]'>
                                 <Click/>
-                            </motion.div>}
+                            </div>}
                     </button>
                     <SendIcon/>
                  </div>
