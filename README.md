@@ -15,7 +15,15 @@ Lets discuss about the 'src/types.ts'
 It exports frequently used interfaces/types for variables across the code base.
 
 How PWA would appear on an android, ios, windows devices ?
+
+ipad pro:
 ![ipadPro](https://github.com/YashwantOstwal/-CoRiderAssignment/assets/140978232/64e1333d-b213-4bee-ad35-46aa80b63408)
+
+android:
+![android](https://github.com/YashwantOstwal/-CoRiderAssignment/assets/140978232/6c8db019-cb08-47a1-853b-0c06cd9a6e71)
+
+windows:
+![desktop](https://github.com/YashwantOstwal/-CoRiderAssignment/assets/140978232/9a3dbdf3-792a-40fb-9b6f-11ce39fa5d8e)
 
 
 
